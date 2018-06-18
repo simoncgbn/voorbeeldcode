@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spot In Town</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="slicknav/navigation-basic.css">
+    <link rel="stylesheet" type="text/css" href="NotificationStyles/css/ns-default.css" />
+    <link rel="stylesheet" type="text/css" href="NotificationStyles/css/ns-style-attached.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/app.js"></script>
+    <script src="NotificationStyles/js/modernizr.custom.js"></script>
+    <script src="NotificationStyles/js/classie.js"></script>
+    <script src="NotificationStyles/js/notificationFx.js"></script>
+
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth">
+    </script>
+
+    <link href="dist/sp-bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<nav class="menu-navigation-basic">
+    <a href="http://student.howest.be/simon.gemmel/webadvanced/opdracht1">Home</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<script>
+
+    $(function(){
+
+        var menu = $('.menu-navigation-basic');
+
+        menu.slicknav();
+
+        menu.on('click', 'a', function(){
+            var a = $(this);
+
+            a.siblings().removeClass('selected');
+            a.addClass('selected');
+        });
+    });
+
+</script>
+<main class="cd-main-content">
+    <div class="cd-filter">
+        <form>
+            <div class="cd-filter-block">
+                <h4>Zoeken</h4>
+                <div class="cd-filter-content">
+                    <input id="value" placeholder="Brussels, BE" type=
+                            "search">
+                </div>
+            </div>
+            <div class="cd-filter-block">
+                <h4>Selecteer</h4>
+                <div class="cd-filter-content">
+                    <div class="cd-select cd-filters">
+                        <select class="filter" id="selectThis" name=
+                                "selectThis">
+                            <option value="">
+                                Maximale afstand
+                            </option>
+                            <option value="0">
+                                0 km
+                            </option>
+                            <option value="20">
+                                20 km
+                            </option>
+                            <option value="50">
+                                50 km
+                            </option>
+                            <option value="100">
+                                100 km
+                            </option>
+                            <option value="150">
+                                150 km
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="cd-filter-block">
+                <h4>Kies een datum (optioneel)</h4>
+                <div class="cd-filter-content">
+                    <input id="date" type="date">
+                </div>
+            </div>
+            <div class="cd-filter-block">
+                <input id="zoeken" onclick="filter()" type="button" value=
+                        "Zoeken">
+            </div>
+        </form><a class="cd-close" href="#0">Close</a>
+    </div>
+    <a class="cd-filter-trigger" href="#0">Filters</a>
+    <div id="test">
+        <h1>Spot In Town</h1><button id='go' type="button">Haal de
+        artiesten op</button>
+    </div>
+    <div class="collapse in" id="achtergrond1">
+        <div class="container" id="OpTour">
+            <div id="titel"></div>
+            <div id="opvulling"></div>
+        </div>
+    </div>
+    <div class="container" id="titel2"></div>
+    <div class="container" id="filterResultaat"></div>
+    <div id="achtergrond">
+        <div class="container" id="opvulling2"></div>
+    </div>
+</main>
+<div id="footerWrapper">
+    <div id="footer">
+        <div class="container">
+            <small></small>
+            <p><small>Door <a href="http://student.howest.be/simon.gemmel/webadvanced/opdracht1">Simon Gemmel</a>
+                © 2015</small></p><small></small>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.1.1.js"></script>
+
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/backstretch.js"></script>
+<script >
+    $("body").backstretch([
+        "images/photo-1416273567255-8abe875affcd.jpg"
+        , "images/photo-1429962714451-bb934ecdc4ec.jpg"
+        , "images/unsplash_523b1f5aafc42_1.jpg"
+        , "images/photo-1445965752525-ac2d3c195ffe.jpg"
+        , "images/unsplash_5252bb51404f8_1.jpg"
+    ], {duration: 5000, fade: 1000});
+</script>
+
+
+
+<script src="NotificationStyles/js/classie.js"></script>
+<script src="NotificationStyles/js/notificationFx.js"></script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="slicknav/jquery.slicknav.min.js"></script>
+</body>
+</html>

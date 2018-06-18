@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Project datavisualization</title>
+		<link rel="stylesheet" type="text/css" href="css/overlay.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="lib/underscore-min.js"></script>
+		<script src="lib/Chart.min.js"></script>
+		<script src="lib/app.js"></script>
+		<script src="lib/jquery.vide.min.js"></script>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body data-vide-bg="vid/guitar" data-vide-options="loop: true, muted: true, position: 0% 0%">
+
+<main>
+
+	<div class="modal">
+		<input id="modal" type="checkbox" name="modal" tabindex="1" onclick="checkbox(this);">
+		<label for="modal" >Launch Modal</label>
+		<div class="modal__overlay">
+			<div class="modal__box">
+				<label for="modal">&#10006;</label>
+				<h2 id="titel"></h2>
+
+				<div id="modal_boks">
+
+				</div>
+				<!--<p id="content"></p>-->
+			</div>
+		</div>
+	</div>
+	<div id="info">
+		<h1>genre</h1>
+		<p>Ontdek welke genres je het meeste beluistert!</p>
+	</div>
+	<div id="button">
+		<input type="submit" id="go" value="ONTDEK HET NU">
+	</div>
+
+
+	<div id="title">
+<h1>GENRES</h1>
+	</div>
+	<div id="legendSmall">
+
+	</div>
+<div class="grafiek">
+
+	<div id="canvas-holder">
+		<canvas id="chart-area" width="400" height="400"/>
+
+	</div>
+	<div id="legend">
+
+	</div>
+</div>
+
+</main>
+
+	</body>
+</html>

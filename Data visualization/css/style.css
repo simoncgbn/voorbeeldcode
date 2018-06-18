@@ -1,0 +1,358 @@
+
+
+.modal input{
+    display: none;
+}
+
+.modal label{
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1em;
+color: #fff;
+
+}
+
+.modal{
+    width: 500px;
+
+}
+
+.canvas-holder{
+    display: none;
+}
+
+#go{
+    display: inline-block;
+    width: 240px;
+    height: 60px;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 29px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    -webkit-transition: background 0.2s ease-out, color 0.2s ease-out;
+    transition: background 0.2s ease-out, color 0.2s ease-out;
+    background: none;
+    cursor: pointer;
+    font-family: 'Open Sans',sans-serif;
+}
+
+#go:hover{
+    background: #fff;
+    color: #232323;.
+
+}
+
+#button{
+position: relative;
+    width: 244px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    top:420px;
+
+}
+
+#info{
+    text-align: center;
+    position: relative;
+    width: 809px;
+    height: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    top:300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+
+    color: #fff;
+
+}
+
+#info h1{
+    font-size: 6em;
+    margin-bottom: 5px;
+}
+
+#info p{
+    font-size: 1.7em;
+}
+
+.modal__box{
+    font-family: 'Open Sans',sans-serif;
+
+}
+
+.img{
+
+    width: 260px;
+
+}
+
+.image{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+main{
+    width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+#canvas-holder{
+    width: 500px;
+
+
+}
+
+#chart-area{
+    cursor: pointer;
+}
+
+#title{
+    width: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 40px;
+    display: none;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 2.5em;
+    color:#fff;
+    text-align: center;
+
+}
+#legend{
+
+    margin-left: 50px;
+
+}
+
+#legend li span{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 6px;
+width: 200px;
+    margin: 2px;
+    left: 20px;
+    text-transform: capitalize;
+
+}
+
+#legendSmall{
+
+    display: none;
+    margin-left: 50px;
+
+}
+
+#legendSmall li span{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 6px;
+    width: 200px;
+    margin: 2px;
+    left: 20px;
+    text-transform: capitalize;
+
+}
+
+.grafiek{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal_boks{
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#modal_boks > div{
+
+    padding: 10px;
+}
+
+
+
+.artiesten{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 21%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.inner{
+    width: 100%;
+    color: #474d51;
+background: white;
+    overflow: hidden;
+    box-shadow: 0 0.125rem 0.313rem rgba( 0, 0, 0, .2 );
+}
+
+.inner figcaption{
+    padding: 1.25rem;
+}
+
+.titles{
+
+    font-weight: bold;
+}
+
+.bar {
+    margin: 0 auto;
+    width: 200px;
+    height: 28px;
+    z-index: 10;
+    border: 1px solid black;
+
+
+}
+
+.bars {
+    width: 74px;
+    position: absolute;
+    z-index: 30;
+    height: 25px;
+    background-color: aquamarine;
+}
+
+.span {
+    margin-left: 1px;
+    margin-top: 5px;
+    position: absolute;
+    overflow: visible;
+}
+
+.spanz {
+
+    margin-bottom: 5px;
+}
+
+.back{
+    display: none;
+}
+
+.back input{
+    font-family: 'Open Sans',sans-serif;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+
+
+}
+
+#legendSmall{
+    margin-bottom: 20px;
+}
+
+
+
+
+/*@media screen and (max-width: 1350px) {*/
+    /*.artiesten{*/
+        /*width: 25%;*/
+    /*}*/
+/*}*/
+
+
+@media screen and (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .artiesten{
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .grafiek{
+        width: 90%;
+        display: flex;
+
+    }
+
+    #canvas-holder{
+        width: 90%;
+    }
+
+    #chart-area{
+        display: inline !important;
+        width: 300px;
+        height: 300px;
+
+
+    }
+
+    #legend{
+       display: none;
+    }
+
+    #legendSmall{
+        display: block;
+        width: 90%;
+    }
+
+    #info{
+        width: 100%;
+        height: 200px;
+        top: 200px;
+    }
+    #button{
+        top:170px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .artiesten{
+        width: 90%;
+    }
+
+    #info h1{
+        font-size: 4em;
+    }
+
+    #info p{
+        font-size: 1.3em;
+    }
+
+    #button{
+        top:130px;
+    }
+}
+

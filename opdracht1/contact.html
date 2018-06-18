@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Mijn artiesten </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="slicknav/navigation-basic.css">
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+
+
+
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/app.js"></script>
+
+    <link href="dist/sp-bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<nav class="menu-navigation-basic black">
+    <a href="http://student.howest.be/simon.gemmel/webadvanced/opdracht1" class="selected">Home</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<script>
+
+    $(function(){
+
+        var menu = $('.menu-navigation-basic');
+
+        menu.slicknav();
+
+        // Mark the clicked item as selected
+
+        menu.on('click', 'a', function(){
+            var a = $(this);
+
+            a.siblings().removeClass('selected');
+            a.addClass('selected');
+        });
+    });
+</script>
+
+
+
+
+<div id="page-wrapper" class="container">
+    <h1>Neem contact op!</h1>
+
+    <div id="form-messages"></div>
+
+    <form id="ajax-contact" method="post" action="php/mailer.php">
+        <div class="field">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+
+            <label for="phone">Telefoonnummer (optioneel):</label>
+            <input type="text" id="phone" name="phone" >
+        </div>
+
+        <div class="field2">
+            <label for="message">Boodschap:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <!-- <div class="g-recaptcha field3" data-sitekey="6LdBCgcTAAAAAGrnbk_A-36B7HFuCUI8jTLN1DyA"></div>-->
+
+        <div class="field3" >
+            <button type="submit" id="verstuur">VERSTUUR</button>
+        </div>
+
+    </form>
+</div>
+
+
+
+
+
+
+<div id="footerWrapper">
+    <div id="footer">
+
+        <div class="container">
+            <small>
+
+                <p>
+                    Door <a href="http://student.howest.be/simon.gemmel/webadvanced/opdracht1">Simon Gemmel</a> © 2015
+                </p>
+            </small>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="js/jquery-2.1.1.js"></script>
+
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/backstretch.js"></script>
+
+
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="slicknav/jquery.slicknav.min.js"></script>
+</body>
+
+</html>

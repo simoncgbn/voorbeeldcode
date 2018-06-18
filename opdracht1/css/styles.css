@@ -1,0 +1,451 @@
+
+body {
+    min-height: 100%;
+
+    background-color: #cccccc;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+
+
+.hero-unit {
+  margin-top:66px;
+  padding-bottom:30px;
+  color: #fff;
+  background-color: #84BD00;
+  text-align:center;
+}
+
+.hero-unit h1 {
+    font-size:64px;
+}
+
+.navbar-nav li a {
+    cursor:pointer;
+}
+
+#main {
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    text-align:center;
+    display:none;
+    font-size:22px;
+}
+
+#footer {
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+#main h2 {
+    font-size:32px;
+}
+
+#info {
+    margin-top:20px;
+    margin-left:10px;
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+    height:32px;
+    font-size:24px;
+}
+
+#test{
+    top: 200px;
+    width: 1170px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 200px;
+    text-align: center;
+}
+
+#opvulling2{
+
+
+    margin-top: 50px;
+}
+
+#opvulling{
+    margin: 0;
+}
+
+#achtergrond{
+    background-color: #f2f2f3;
+    background-image: url(http://www.transparenttextures.com/patterns/back-pattern.png);
+
+}
+
+#achtergrond1{
+    background-color: #f2f2f3;
+    background-image: url(http://www.transparenttextures.com/patterns/blizzard.png);
+
+}
+
+.tickets{
+    padding: 4px;
+    background-color: #84bd00;
+    border: solid 1px black;
+    color: white;
+    margin: 4px;
+    text-decoration: none;
+}
+
+.tickets:hover{
+    color: #84bd00;
+    background-color: white;
+
+}
+#images{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    float: left;
+    position:relative;
+}
+
+
+#images img{
+width: 80px;
+    position:relative;
+    display:block;
+
+}
+#images:hover{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    float: left;
+}
+#images:hover img{
+    position:relative;
+    height: 100%;
+    width: auto;
+    max-height: 200px;
+    z-index:999;
+}
+
+.box{
+    border: 5px solid #fff;
+    cursor: pointer;
+    height: 182px;
+    float: left;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+
+}
+
+.box img{
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    max-width: 200px;
+    min-height: 182px;
+}
+
+.box .caption {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+.box .simple-caption {
+    height: 30px;
+    width: 200px;
+    display: block;
+    bottom: -30px;
+    line-height: 25pt;
+    text-align: center;
+}
+.box:hover .simple-caption {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+#koop{
+    min-width: 140px;
+}
+
+#go{
+    padding: 10px 25px;
+    border: 3px solid white;
+    text-transform: uppercase;
+    background: transparent;
+    background: rgba(0,0,0,.2);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    line-height: 20px;
+
+}
+
+#go:hover{
+    background: rgba(0,0,0,.3);
+}
+
+#test h1{
+    text-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    margin: 20px 0 30px 0;
+    padding: 0;
+    line-height: 115px;
+}
+
+.menu{
+
+
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+text-align: center;
+
+
+}
+
+
+
+.menu ul {
+    display: table;
+    margin:0 auto;
+}
+.menu ul li{
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    float: left;
+    padding: 5px;
+    text-align: center;
+
+
+}
+
+.menu ul li a{
+    color: white;
+    text-align: center;
+
+
+}
+
+.menu ul li a:hover{
+    /*border-bottom: 1px solid white;*/
+}
+
+#right{
+    float: right;
+}
+
+#big{
+    font-size: 30px;
+}
+
+
+
+#footer{
+
+    bottom: 20px;
+    color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer p{
+    width: 100%;
+
+}
+
+#filter{
+
+}
+
+#zoeken{
+    padding: 5px 10px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background: transparent;
+
+
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    line-height: 20px;
+
+}
+
+#zoeken:hover{
+    background: rgba(0,0,0,.3);
+}
+
+
+
+
+.cd-filter-trigger{
+    display: none;
+}
+
+/*.cd-filter{*/
+    /*display: none;*/
+/*}*/
+
+
+#achtergrond{
+height:900px;
+    display: none;
+}
+
+.calendar{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right:4px ;
+    background-color: #bd2a0c;
+    border: solid 1px black;
+    color: white;
+
+    text-decoration: none;
+}
+.calendar:hover{
+    color: #bd2a0c;
+    background-color: white;
+}
+
+
+#page-wrapper h1 {
+    color: #84BD00;
+}
+
+.field {
+    margin: 1em 0;
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+}
+
+.field2 {
+    margin: 1em 0;
+    width: 45%;
+    float: left;
+}
+
+.field3 {
+    margin: 1em 0;
+    width: 45%;
+}
+
+
+
+#page-wrapper label {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+.field input {
+    width: 100%;
+    padding: .3em .3em;
+    font-size: 1.1em;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+}
+
+textarea {
+    width: 100%;
+    height: 213px;
+    padding: .3em .3em;
+    font-size: 1.1em;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+}
+
+#verstuur {
+    display: inline-block;
+    border-radius: 1px;
+    border: none;
+    font-size: 1.4rem;
+    padding: .5rem .8em;
+    background: #84BD00;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+}
+
+#verstuur:hover, #verstuur:focus {
+    background: #fff;
+    color: #84BD00;
+    border: 2px solid #84BD00;
+    cursor: pointer;
+}
+
+.black a{
+    color: #000;
+    text-shadow: none;
+}
+
+.black a:hover{
+    color: #000;
+}
+
+
+@media screen and (max-width: 1170px) {
+    #test{
+        width: 600px;
+    }
+
+    #test h1{
+        font-size: 70px;
+        margin:0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #test{
+        width: 100%;
+        top:50px;
+        margin-top: 50px;
+    }
+
+    #test h1{
+        font-size: 48px;
+        margin:0;
+        padding: 0;
+    }
+}
