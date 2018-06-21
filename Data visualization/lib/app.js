@@ -1,6 +1,5 @@
 
 var accessToken = null;
-var genresz = [];
 var myChart = "";
 
 
@@ -61,25 +60,17 @@ var list = [];
 var genresObj = {};
 
 function printartists(artists){
-
-
 var i = 0;
-
     _.each(artists.artists.items, function(item) {
         var genres = [];
 
 
         for(var i = 0; i< item.genres.length; i++){
             genres[i] = item.genres[i];
-        }
-        for(var i = 0; i<genres.length; i++){
             if (genres[i]  !== undefined && genres[i] != "" && genres[i] != " ") {
-
                 list.push(genres[i]);
-
             }
         }
-
     });
 
     if (artists.artists.next) {

@@ -452,5 +452,4 @@ $(document).ready(function() {
             authorizeUser();
         });
     }
-    //}
 });
